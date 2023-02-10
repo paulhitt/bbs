@@ -1,0 +1,17 @@
+---
+version: "3.7"
+services:
+  enigma:
+    image: enigmabbs/enigma-bbs:latest
+    ports:
+      - "8888:8888"
+      - "8889:8889"
+    volumes:
+      - ./enigma/config:/enigma-bbs/config
+      - ./enigma/db:/enigma-bbs/db
+      - ./enigma/logs:/enigma-bbs/logs
+      - ./enigma/filebase:/enigma-bbs/filebase
+      - ./enigma/art:/enigma-bbs/art
+      - ./enigma/mods:/enigma-bbs/mods
+      - ./enigma/mail:/mail
+    restart: unless-stopped

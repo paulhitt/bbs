@@ -153,7 +153,7 @@
             enabled: true
             port: 8889
             privateKeyPem: /enigma-bbs/config/ssh_private_key.pem
-            privateKeyPass: tUbap3Utres
+            privateKeyPass: ""
         }
 
         webSocket: {
